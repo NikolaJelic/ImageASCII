@@ -17,6 +17,7 @@ public class ASCIIConverter {
 
 
     private BufferedImage imageToProcess;
+
     private Tile processedImage;
 
     public void setImageToProcess(BufferedImage img) {

@@ -27,6 +27,7 @@ public class GUI {
             .withDebugMode(true)
             .withTitle("ImageASCII")
             .build());
+
     public static TileGrid getTileGrid() {
         return tileGrid;
     }
@@ -57,7 +58,7 @@ public class GUI {
         this.panelImage = panelImage;
     }
 
-    public static void main(String [] args ) {
+    public void GUI() {
 
 
         TileGrid tileGrid = getTileGrid();
@@ -88,7 +89,12 @@ public class GUI {
                 .build();
         openButton.handleComponentEvents(ACTIVATED, (event) -> {
             //  System.exit(0);
+            ASCIIConverter asciiConverter = new ASCIIConverter();
+            try {
+                asciiConverter.setImageToProcess(FilePicker.openFileChooser());
+            } catch (Exception e) {
 
+            }
 
             return UIEventResponses.processed();
         });
