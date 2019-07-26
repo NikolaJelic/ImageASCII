@@ -2,6 +2,7 @@ import org.hexworks.zircon.api.*;
 import org.hexworks.zircon.api.component.Button;
 import org.hexworks.zircon.api.component.Panel;
 import org.hexworks.zircon.api.data.Size;
+import org.hexworks.zircon.api.data.Tile;
 import org.hexworks.zircon.api.graphics.BoxType;
 import org.hexworks.zircon.api.grid.TileGrid;
 import org.hexworks.zircon.api.resource.TilesetResource;
@@ -87,18 +88,29 @@ public class GUI {
                 .withText("Save")
                 .withPosition(Positions.create(0, optionsY - 5))
                 .build();
+        ASCIIConverter asciiConverter = new ASCIIConverter();
+        Panel panelImage = getPanelImage();
         openButton.handleComponentEvents(ACTIVATED, (event) -> {
             //  System.exit(0);
-            ASCIIConverter asciiConverter = new ASCIIConverter();
             try {
                 asciiConverter.setImageToProcess(FilePicker.openFileChooser());
             } catch (Exception e) {
 
             }
-
+            asciiConverter.process();
+            Tile[][] tiles = asciiConverter.convertForRender();
+            for (int i = 0; i < panelY; i++) {
+                for (int j = 0; j < panelX; j++) {
+                    panelImage.setTileAt(
+                            Positions.create(i, j),
+                            tiles[i][j]
+                    );
+                }
+            }
             return UIEventResponses.processed();
         });
-        Panel panelImage = getPanelImage();
+
+
 
         panelOptions.addComponent(openButton);
         panelOptions.addComponent(workButton);
@@ -115,4 +127,5 @@ public class GUI {
         screen.display();
 
     }
+
 }

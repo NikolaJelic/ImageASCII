@@ -18,7 +18,6 @@ public class ASCIIConverter {
 
     private BufferedImage imageToProcess;
 
-    private Tile processedImage;
 
     public void setImageToProcess(BufferedImage img) {
         imageToProcess = img;
@@ -31,33 +30,55 @@ public class ASCIIConverter {
 
     private BufferedImage imageToRender;
 
-    {
+
+
+    GetColors colors;
+    int[][] pic;
+    int[][] red;
+    int[][] green;
+    int[][] blue;
+
+    GetASCIIchar asciiChar;
+    char[][] chars;
+
+    GetColors renderColors;
+    int[][] rpic;
+    int[][] rred;
+    int[][] rgreen;
+    int[][] rblue;
+
+    GetASCIIchar asciiCharR;
+    char[][] rchars;
+
+    public void process() {
         try {
             imageToRender = resize(imageToProcess, panelY, panelX);
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        colors = new GetColors(imageToProcess);
+        pic = colors.pic();
+        red = colors.colorRed();
+        green = colors.colorGreen();
+        blue = colors.colorBlue();
+        asciiChar = new GetASCIIchar(pic);
+        chars = asciiChar.getChar();
+
+        renderColors = new GetColors(imageToRender);
+        rpic = renderColors.pic();
+        rred = renderColors.colorRed();
+        rgreen = renderColors.colorGreen();
+        rblue = renderColors.colorBlue();
+
+        asciiCharR = new GetASCIIchar(rpic);
+        rchars = asciiChar.getChar();
+        GetASCIIchar asciiCharR = new GetASCIIchar(rpic);
+        char[][] rchars = asciiChar.getChar();
+
+
     }
 
-
-    GetColors colors = new GetColors(imageToProcess);
-    int[][] pic = colors.pic();
-    int[][] red = colors.colorRed();
-    int[][] green = colors.colorGreen();
-    int[][] blue = colors.colorBlue();
-
-    GetASCIIchar asciiChar = new GetASCIIchar(pic);
-    char[][] chars = asciiChar.getChar();
-
-    GetColors renderColors = new GetColors(imageToRender);
-    int[][] rpic = renderColors.pic();
-    int[][] rred = renderColors.colorRed();
-    int[][] rgreen = renderColors.colorGreen();
-    int[][] rblue = renderColors.colorBlue();
-
-
-    GetASCIIchar asciiCharR = new GetASCIIchar(rpic);
-    char[][] rchars = asciiChar.getChar();
 
     public Tile[][] convertForRender() {
         Tile[][] imageToRender = new Tile[panelY][panelX];
