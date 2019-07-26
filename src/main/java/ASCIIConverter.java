@@ -79,16 +79,16 @@ public class ASCIIConverter {
 
     }
 
-
+    Tile[][] tilesToRender = new Tile[panelY][panelX];
     public Tile[][] convertForRender() {
-        Tile[][] imageToRender = new Tile[panelY][panelX];
+
         for (int i = 0; i < panelY; i++) {
             for (int j = 0; j < panelX; j++) {
-                imageToRender[i][j] = createTile(rchars[i][j], rred[i][j], rgreen[i][j], rblue[i][j]);
+                tilesToRender[i][j] = createTile(rchars[i][j], rred[i][j], rgreen[i][j], rblue[i][j]);
 
             }
         }
-        return imageToRender;
+        return tilesToRender;
     }
 
     public ASCIIPixel[][] convertForSave() {

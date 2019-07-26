@@ -59,7 +59,7 @@ public class GUI {
         this.panelImage = panelImage;
     }
 
-    public void GUI() {
+    public void GUIrender() {
 
 
         TileGrid tileGrid = getTileGrid();
