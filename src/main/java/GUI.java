@@ -64,7 +64,8 @@ public class GUI {
         Screen screen = Screens.createScreenFor(tileGrid);
         int panelX = getPanelX();
         int panelY = getPanelY();
-
+        System.out.println(panelX + "X");
+        System.out.println(panelY + "Y");
         int optionsX = (int) (columns / 6);
         int optionsY = (int) rows;
         Panel panelOptions = Components.panel()

@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class FilePicker {
 
-    public static BufferedImage openFileChooser() {
+    public static BufferedImage openFileChooser() throws IOException {
 
         int width = GUI.getPanelX();
         int height = GUI.getPanelY();
@@ -28,10 +28,9 @@ public class FilePicker {
             File selectedFile = jfc.getSelectedFile();
             path = selectedFile.getAbsolutePath();
             try {
-                img = resize(ImageIO.read(new File(path)),width,height);
+                img = ImageIO.read(new File(path));
             } catch (IOException e) {
-            }
-        }
+            }        }
         return img;
     }
     public static BufferedImage resize(BufferedImage img, int newW, int newH) throws IOException {
