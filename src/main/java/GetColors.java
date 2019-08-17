@@ -3,18 +3,24 @@ import java.awt.image.BufferedImage;
 
 public class GetColors {
     private BufferedImage image;
+
+
     public GetColors(BufferedImage image){
         this.image = image;
     }
+    int height = image.getHeight();
+    int width = image.getWidth();
+    int[][] pic = new int[height][width];
+    public int[][] cRed = new int [height][width];
+    public int[][] cGreen = new int [height][width];
+    public int[][] cBlue = new int [height][width];
+
+
     public  int[][] pic() {
 
 
 
-        int height = image.getHeight();
-        int width = image.getWidth();
 
-
-        int[][] pic = new int[height][width];
         Color color;
         int red, green, blue;
 
@@ -38,10 +44,7 @@ public class GetColors {
 
 
 
-        int height = image.getHeight();
-        int width = image.getWidth();
 
-        int[][] cRed= new  int[height][width];
         Color color;
         int red;
 
@@ -63,10 +66,7 @@ public class GetColors {
     public int[][] colorGreen(){
 
 
-        int height = image.getHeight();
-        int width = image.getWidth();
 
-        int[][] cGreen= new int[height][width];
         Color color;
         int  green;
 
@@ -90,10 +90,7 @@ public class GetColors {
 
 
 
-        int height = image.getHeight();
-        int width = image.getWidth();
 
-        int[][] cBlue= new int[height][width];
         Color color;
         int blue;
 

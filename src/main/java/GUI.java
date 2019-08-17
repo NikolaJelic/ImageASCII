@@ -98,7 +98,7 @@ public class GUI {
 
             }
             asciiConverter.process();
-            Tile[][] tiles = asciiConverter.convertForRender();
+            Tile[][] tiles = asciiConverter.tilesToRender;
             for (int i = 0; i < panelY; i++) {
                 for (int j = 0; j < panelX; j++) {
                     panelImage.setTileAt(

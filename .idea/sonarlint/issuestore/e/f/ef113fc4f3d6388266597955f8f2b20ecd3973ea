@@ -1,10 +1,16 @@
 
-Xsquid:S22099"5Change this instance-reference to a static reference.(×Šã×ÿÿÿÿÿ8®šœ¬Â-
-vsquid:S1602Y"SRemove useless curly braces around statement and then remove useless return keyword(âÃ×…ùÿÿÿÿ8¢“é®Â-
-[squid:S1854>"8Remove this useless assignment to local variable "main".(æü¦üÿÿÿÿ8¢“é®Â-
-Lsquid:S1481>")Remove this unused "main" local variable.(æü¦üÿÿÿÿ8¢“é®Â-
-nsquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(´£ç‚øÿÿÿÿ8¢“é®Â-
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(éª‘òüÿÿÿÿ8À½š¬Â-
-Ysquid:S26969"6Make the enclosing method "static" or remove this set.(×Šã×ÿÿÿÿÿ8®šœ¬Â-
-msquid:S00100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÀ±˜8Äâ”¯Â-
-Vsquid:S1611Y"3Remove the parentheses around the "event" parameter(âÃ×…ùÿÿÿÿ8¢“é®Â-
+csquid:HiddenFieldCheckC":Rename "panelX" which hides the field declared at line 36.(®‘‡8Œ²š÷Â-
+msquid:S00100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥‰À”8óÎš÷Â-
+[
+squid:S106E"9Replace this use of System.out or System.err by a logger.(¾¨›æøÿÿÿÿ8ã¤¯õÂ-
+[
+squid:S106F"9Replace this use of System.out or System.err by a logger.(ÍÚÜƒüÿÿÿÿ8¤‚°õÂ-
+Ysquid:S2696;"6Make the enclosing method "static" or remove this set.(×Šã×ÿÿÿÿÿ8®šœ¬Â-
+lsquid:HiddenFieldCheck\">Rename "panelImage" which hides the field declared at line 47.(ç”—®ıÿÿÿÿ8Â­ûÂ-
+Hsquid:S00108a")Either remove or fill this block of code.(”ı¾8ı›ç÷Â-
+esquid:HiddenFieldCheckA"<Rename "tileGrid" which hides the field declared at line 25.(üì¶µ8Œ²š÷Â-
+Vsquid:S1611]"3Remove the parentheses around the "event" parameter(âÃ×…ùÿÿÿÿ8¢“é®Â-
+nsquid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(´£ç‚øÿÿÿÿ8¢“é®Â-
+hsquid:HiddenFieldCheckD":Rename "panelY" which hides the field declared at line 37.(õÏ¢šøÿÿÿÿ8Œ²š÷Â-
+Xsquid:S2209;"5Change this instance-reference to a static reference.(×Šã×ÿÿÿÿÿ8®šœ¬Â-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(éª‘òüÿÿÿÿ8À½š¬Â-
