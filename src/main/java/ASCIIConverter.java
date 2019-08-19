@@ -49,7 +49,7 @@ public class ASCIIConverter {
     GetASCIIchar asciiCharR;
     char[][] rchars;
 
-    Tile[][] tilesToRender = new Tile[panelY][panelX];
+    Tile[][] tilesToRender;
 
     public void renderImg() {
         try {
@@ -67,6 +67,7 @@ public class ASCIIConverter {
     }
 
     public void process() {
+renderImg();
 
         colors = new GetColors(imageToProcess);
         pic = colors.pic();

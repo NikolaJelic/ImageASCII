@@ -3,17 +3,24 @@ import java.awt.image.BufferedImage;
 
 public class GetColors {
     private BufferedImage image;
+    int height;
+    int width;
+    int [][] pic;
+    int [][] cRed,cBlue,cGreen;
 
 
     public GetColors(BufferedImage image){
         this.image = image;
+         height = image.getHeight();
+         width = image.getWidth();
+         pic = new int[height][width];
+         cRed = new int [height][width];
+         cGreen = new int [height][width];
+        cBlue = new int [height][width];
+
     }
-    int height = image.getHeight();
-    int width = image.getWidth();
-    int[][] pic = new int[height][width];
-    public int[][] cRed = new int [height][width];
-    public int[][] cGreen = new int [height][width];
-    public int[][] cBlue = new int [height][width];
+
+
 
 
     public  int[][] pic() {
