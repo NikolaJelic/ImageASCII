@@ -94,10 +94,11 @@ public class GUI {
             //  System.exit(0);
             try {
                 asciiConverter.setImageToProcess(FilePicker.openFileChooser());
+                asciiConverter.process();
             } catch (Exception e) {
 
             }
-            asciiConverter.process();
+
             Tile[][] tiles = asciiConverter.tilesToRender;
             for (int i = 0; i < panelY; i++) {
                 for (int j = 0; j < panelX; j++) {

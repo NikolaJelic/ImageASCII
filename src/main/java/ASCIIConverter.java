@@ -49,7 +49,7 @@ public class ASCIIConverter {
     GetASCIIchar asciiCharR;
     char[][] rchars;
 
-    Tile[][] tilesToRender;
+    Tile[][] tilesToRender = new Tile[panelY][panelX];
 
     public void renderImg() {
         try {
@@ -57,18 +57,13 @@ public class ASCIIConverter {
         } catch (IOException e) {
             e.printStackTrace();
 
-            for (int i = 0; i < panelY; i++) {
-                for (int j = 0; j < panelX; j++) {
-                    tilesToRender[i][j] = createTile(rchars[i][j], rred[i][j], rgreen[i][j], rblue[i][j]);
 
-                }
-            }
         }
     }
 
     public void process() {
 renderImg();
-
+       //  tilesToRender= new Tile[panelY][panelX];
         colors = new GetColors(imageToProcess);
         pic = colors.pic();
         red = colors.colorRed();
@@ -87,7 +82,12 @@ renderImg();
         rchars = asciiChar.getChar();
         GetASCIIchar asciiCharR = new GetASCIIchar(rpic);
         char[][] rchars = asciiChar.getChar();
+        for (int i = 0; i < panelY; i++) {
+            for (int j = 0; j < panelX; j++) {
+                tilesToRender[i][j] = createTile(rchars[i][j], rred[i][j], rgreen[i][j], rblue[i][j]);
 
+            }
+        }
     }
 
   /*  public Tile[][] convertForRender() {
