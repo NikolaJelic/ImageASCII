@@ -17,3 +17,5 @@ M
 src/main/java/ASCIIPixel.java,8\8\885422c42e49516985dbcb96e2a75faa62b72fff
 O
 src/main/java/GetASCIIchar.java,9\d\9d1fed91b20a852fe5786249558e94cd98345376
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

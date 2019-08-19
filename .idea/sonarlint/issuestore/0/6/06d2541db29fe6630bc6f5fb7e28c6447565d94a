@@ -1,7 +1,7 @@
 
-Xsquid:S1118":Add a private constructor to hide the implicit public one.(ë½ıì8±¨İñÂ-
-]squid:S1854":Remove this useless assignment to local variable "height".(°™±¹ÿÿÿÿÿ8±¨İñÂ-
+Nsquid:S1481"+Remove this unused "height" local variable.(°™±¹ÿÿÿÿÿ8±¨İñÂ-
 \squid:S1854"9Remove this useless assignment to local variable "width".(ÔÚ¬¡úÿÿÿÿ8±¨İñÂ-
 Msquid:S1481"*Remove this unused "width" local variable.(ÔÚ¬¡úÿÿÿÿ8±¨İñÂ-
+]squid:S1854":Remove this useless assignment to local variable "height".(°™±¹ÿÿÿÿÿ8±¨İñÂ-
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(ë½ıì8±¨İñÂ-
 Hsquid:S00108 ")Either remove or fill this block of code.(ï­£Ä8æÖÔóÂ-
-Nsquid:S1481"+Remove this unused "height" local variable.(°™±¹ÿÿÿÿÿ8±¨İñÂ-
