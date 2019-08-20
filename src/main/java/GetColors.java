@@ -31,8 +31,8 @@ public class GetColors {
         Color color;
         int red, green, blue;
 
-        for (int i = 0; i < height-1; i++) {
-            for (int j = 0; j < width-1; j++) {
+        for (int i = 0; i < width-1; i++) {
+            for (int j = 0; j < height-1; j++) {
 
                 color = new Color(image.getRGB(i, j));
                 red = color.getRed();
@@ -55,8 +55,8 @@ public class GetColors {
         Color color;
         int red;
 
-        for (int i = 0; i < height-1; i++) {
-            for (int j = 0; j < width-1; j++) {
+        for (int i = 0; i < width-1; i++) {
+            for (int j = 0; j < height-1; j++) {
                 color = new Color(image.getRGB(i, j));
                 red = color.getRed();
 
@@ -77,8 +77,8 @@ public class GetColors {
         Color color;
         int  green;
 
-        for (int i = 0; i < height-1; i++) {
-            for (int j = 0; j < width-1; j++) {
+        for (int i = 0; i < width-1; i++) {
+            for (int j = 0; j < height-1; j++) {
                 color = new Color(image.getRGB(i, j));
 
                 green = color.getGreen();
@@ -101,8 +101,8 @@ public class GetColors {
         Color color;
         int blue;
 
-        for (int i = 0; i < height-1; i++) {
-            for (int j = 0; j < width-1; j++) {
+        for (int i = 0; i < width-1; i++) {
+            for (int j = 0; j < height-1; j++) {
                 color = new Color(image.getRGB(i, j));
 
                 blue = color.getBlue();

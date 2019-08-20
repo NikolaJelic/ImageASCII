@@ -82,10 +82,9 @@ renderImg();
         rchars = asciiChar.getChar();
         GetASCIIchar asciiCharR = new GetASCIIchar(rpic);
         char[][] rchars = asciiChar.getChar();
-        for (int i = 0; i < panelY; i++) {
-            for (int j = 0; j < panelX; j++) {
+        for (int i = 0; i < panelY - 1; i++) {
+            for (int j = 0; j < panelX - 1; j++) {
                 tilesToRender[i][j] = createTile(rchars[i][j], rred[i][j], rgreen[i][j], rblue[i][j]);
-
             }
         }
     }
