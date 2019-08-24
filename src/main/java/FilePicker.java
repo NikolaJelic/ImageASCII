@@ -12,8 +12,6 @@ public class FilePicker {
 
     public static BufferedImage openFileChooser() throws IOException {
 
-        int width = GUI.getPanelX();
-        int height = GUI.getPanelY();
 
         JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
         jfc.setDialogTitle("Select an image");
@@ -22,7 +20,7 @@ public class FilePicker {
         jfc.addChoosableFileFilter(filter);
 
         int returnValue = jfc.showOpenDialog(null);
-        String path = null;
+        String path;
         BufferedImage img=null;
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = jfc.getSelectedFile();

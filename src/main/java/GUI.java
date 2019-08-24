@@ -22,11 +22,12 @@ public class GUI {
     static double rows = screenSize.getHeight() / TILESET.getHeight() / 1.2;
     static Size terminalSize = Sizes.create((int) columns, (int) rows);
 
-    private final static TileGrid tileGrid = SwingApplications.startTileGrid(AppConfigs.newConfig()
+    private static final  TileGrid tileGrid = SwingApplications.startTileGrid(AppConfigs.newConfig()
             .withDefaultTileset(TILESET)
             .withSize(terminalSize)
             .withDebugMode(true)
             .withTitle("ImageASCII")
+            .fullScreen()
             .build());
 
     public static TileGrid getTileGrid() {
@@ -55,19 +56,14 @@ public class GUI {
         return panelImage;
     }
 
-    public void setPanelImage(Panel panelImage) {
-        this.panelImage = panelImage;
-    }
+
 
     public void GUIrender() {
 
 
-        TileGrid tileGrid = getTileGrid();
         Screen screen = Screens.createScreenFor(tileGrid);
-        int panelX = getPanelX();
-        int panelY = getPanelY();
-        System.out.println(panelX + "X");
-        System.out.println(panelY + "Y");
+
+
         int optionsX = (int) (columns / 6);
         int optionsY = (int) rows;
         Panel panelOptions = Components.panel()
@@ -86,36 +82,69 @@ public class GUI {
                 .build();
         Button saveButton = Components.button()
                 .withText("Save")
+                .withPosition(Positions.create(0, optionsY - 8))
+                .build();
+        Button exitButton = Components.button()
+                .withText("Exit")
                 .withPosition(Positions.create(0, optionsY - 5))
                 .build();
         ASCIIConverter asciiConverter = new ASCIIConverter();
-        Panel panelImage = getPanelImage();
-        openButton.handleComponentEvents(ACTIVATED, (event) -> {
-            //  System.exit(0);
+
+        openButton.handleComponentEvents(ACTIVATED, event -> {
+
+            Tile[][] tiles ;
+            Tile[][] nullTiles = new Tile[panelX][panelY];
+
+
+            for (int i = 0; i < panelX; i++) {
+                for (int j = 0; j < panelY; j++) {
+                    nullTiles[i][j] = Tiles.newBuilder()
+                            .withBackgroundColor(TileColors.fromString("#00001c"))
+                            .withForegroundColor(TileColors.fromString("#00001c"))
+                            .withCharacter(' ')
+                            .build();
+
+                }
+            }
+
             try {
+                asciiConverter.setTilesToRender(nullTiles);
                 asciiConverter.setImageToProcess(FilePicker.openFileChooser());
 
             } catch (Exception e) {
 
             }
+
+
+
+
             asciiConverter.process();
-            Tile[][] tiles = asciiConverter.tilesToRender;
-            for (int i = 0; i < panelY; i++) {
-                for (int j = 0; j < panelX; j++) {
-                    panelImage.setTileAt(
-                            Positions.create(i, j),
-                            tiles[i][j]
-                    );
+            tiles = asciiConverter.getTilesToRender();
+            for (int i = 0; i < panelX; i++) { ////-1
+                for (int j = 0; j < panelY; j++) {
+                    if (tiles[i][j] != null) {
+                        panelImage.setTileAt(
+                                Positions.create(i, j),
+                                tiles[i][j]
+                        );
+                    }
                 }
+
             }
             return UIEventResponses.processed();
         });
+        exitButton.handleComponentEvents(ACTIVATED, event -> {
 
+            System.exit(0);
+            return UIEventResponses.processed();
+
+        });
 
 
         panelOptions.addComponent(openButton);
         panelOptions.addComponent(workButton);
         panelOptions.addComponent(saveButton);
+        panelOptions.addComponent(exitButton);
         screen.addComponent(panelImage);
         screen.addComponent(panelOptions);
         screen.applyColorTheme(ColorThemes.newBuilder()
@@ -127,6 +156,22 @@ public class GUI {
                 .build());
         screen.display();
 
+    }
+
+    public void clearPanel() {
+        Tile blankTile = Tiles.newBuilder()
+                .withBackgroundColor(TileColors.fromString("#00001c"))
+                .withForegroundColor(TileColors.fromString("#00001c"))
+                .withCharacter(' ')
+                .build();
+        for (int i = 0; i < panelX; i++) {
+            for (int j = 0; j < panelY; j++) {
+                panelImage.setTileAt(
+                        Positions.create(i, j),
+                        blankTile
+                );
+            }
+        }
     }
 
 }

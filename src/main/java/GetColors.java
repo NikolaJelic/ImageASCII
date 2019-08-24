@@ -13,10 +13,10 @@ public class GetColors {
         this.image = image;
          height = image.getHeight();
          width = image.getWidth();
-         pic = new int[height][width];
-         cRed = new int [height][width];
-         cGreen = new int [height][width];
-        cBlue = new int [height][width];
+         pic = new int[width][height];
+         cRed = new int [width][height];
+         cGreen = new int [width][height];
+        cBlue = new int [width][height];
 
     }
 

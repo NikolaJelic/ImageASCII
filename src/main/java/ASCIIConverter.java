@@ -48,12 +48,21 @@ public class ASCIIConverter {
 
     GetASCIIchar asciiCharR;
     char[][] rchars;
+    private Tile[][] tilesToRender = new Tile[panelX][panelY];
+    public Tile[][] getTilesToRender() {
+        return tilesToRender;
+    }
 
-    Tile[][] tilesToRender = new Tile[panelY][panelX];
+    public void setTilesToRender(Tile[][] tilesToRender) {
+        this.tilesToRender = tilesToRender;
+    }
+
+
+
 
     public void renderImg() {
         try {
-            imageToRender = resize(imageToProcess, panelY, panelX);
+            imageToRender = resize(imageToProcess, panelX, panelY);
         } catch (IOException e) {
             e.printStackTrace();
 
@@ -62,8 +71,7 @@ public class ASCIIConverter {
     }
 
     public void process() {
-renderImg();
-       //  tilesToRender= new Tile[panelY][panelX];
+        renderImg();
         colors = new GetColors(imageToProcess);
         pic = colors.pic();
         red = colors.colorRed();
@@ -79,26 +87,16 @@ renderImg();
         rblue = renderColors.colorBlue();
 
         asciiCharR = new GetASCIIchar(rpic);
-        rchars = asciiChar.getChar();
-        GetASCIIchar asciiCharR = new GetASCIIchar(rpic);
-        char[][] rchars = asciiChar.getChar();
-        for (int i = 0; i < panelY - 1; i++) {
-            for (int j = 0; j < panelX - 1; j++) {
+        rchars = asciiCharR.getChar();
+        for (int i = 0; i < imageToRender.getWidth() ; i++) {//-1
+            for (int j = 0; j < imageToRender.getHeight() ; j++) {
                 tilesToRender[i][j] = createTile(rchars[i][j], rred[i][j], rgreen[i][j], rblue[i][j]);
             }
         }
     }
 
-  /*  public Tile[][] convertForRender() {
 
-        for (int i = 0; i < panelY; i++) {
-            for (int j = 0; j < panelX; j++) {
-                tilesToRender[i][j] = createTile(rchars[i][j], rred[i][j], rgreen[i][j], rblue[i][j]);
 
-            }
-        }
-        return tilesToRender;
-    }*/
 
     public ASCIIPixel[][] convertForSave() {
         int height = imageToProcess.getHeight();
@@ -115,12 +113,12 @@ renderImg();
 
     public Tile createTile(char ch, int red, int green, int blue) {
 
-        Tile tile = Tiles.newBuilder()
+
+        return Tiles.newBuilder()
                 .withBackgroundColor(TileColors.create(red - (red / 3), green - (green / 3), blue - (blue / 3)))
                 .withForegroundColor(TileColors.create(red, green, blue))
                 .withCharacter(ch)
                 .build();
-        return tile;
     }
 
     public static BufferedImage resize(BufferedImage img, int newW, int newH) throws IOException {
