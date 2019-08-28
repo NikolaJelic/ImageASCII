@@ -144,7 +144,9 @@ public class GUI {
             int x = asciiConverter.pic.length;
             int y = asciiConverter.pic[0].length;
 
-            SaveImage saveImage = new SaveImage(asciiConverter.red,asciiConverter.green,asciiConverter.blue,asciiConverter.chars,x,y);
+            SaveImage saveImage = new SaveImage(asciiConverter.red,asciiConverter.green,asciiConverter.blue,asciiConverter.chars);
+            //,asciiConverter.pic.length,asciiConverter.pic[0].length
+
             try {
                 saveImage.paint();
             } catch (Exception e) {

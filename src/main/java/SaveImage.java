@@ -11,32 +11,31 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-public class SaveImage  {
+public class SaveImage {
 
     private int[][] red;
     private int[][] green;
     private int[][] blue;
     private char[][] chars;
-    private int x,y;
+    private int x = chars.length;
+    private int y = chars[0].length;
 
-    public SaveImage(int[][] red, int[][] green, int[][] blue, char[][] chars, int x, int y) {
+    public SaveImage(int[][] red, int[][] green, int[][] blue, char[][] chars) {
         this.red = red;
         this.green = green;
         this.blue = blue;
         this.chars = chars;
-        this.x =x;
-        this.y =y;
+
     }
 
 
-
-    Tile[][] imageForSave = new Tile[x][y];
+    Tile[][] imageForSave = new Tile[y][x];
 
     SwingTilesetLoader loader = new SwingTilesetLoader();
     final Tileset<Graphics2D> tileset = loader.loadTilesetFrom(CP437TilesetResources.rexPaint16x16());
-   // final BufferedImage image = new BufferedImage(800, 600, BufferedImage.TRANSLUCENT);
+     final BufferedImage image = new BufferedImage(800, 600, BufferedImage.TRANSLUCENT);
 
-      BufferedImage image = new BufferedImage(x * tileset.getHeight(), y * tileset.getWidth(), BufferedImage.TRANSLUCENT);
+  //  BufferedImage image = new BufferedImage(y * 16, x * 16, BufferedImage.TRANSLUCENT);
 
     Graphics2D graphics = image.createGraphics();
 
@@ -50,7 +49,7 @@ public class SaveImage  {
         }
         File file = new File("TestImage3.png");
         ImageIO.write(image, "png", file);
-      //  ImageIO.write(saveImage, "png", new File("./output_image.png"));
+        //  ImageIO.write(saveImage, "png", new File("./output_image.png"));
 
     }
 

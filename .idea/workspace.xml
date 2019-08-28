@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4ca1845c-8c7a-401f-bd07-1f91360eb120" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SaveImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SaveImage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="149" column="35" lean-forward="true" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
+            <state relative-caret-position="196">
+              <caret line="147" column="69" selection-start-line="147" selection-start-column="69" selection-end-line="147" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -36,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SaveImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="23">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="2" selection-end-line="20" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -197,7 +198,7 @@
   <component name="PropertiesComponent">
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.6577473" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567004599635" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567011204177" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -311,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567004596208</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="started working on the saving option">
+      <created>1567005161783</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1567005161783</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -361,16 +369,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GUI.java</url>
-          <line>146</line>
+          <url>file://$PROJECT_DIR$/src/main/java/SaveImage.java</url>
+          <line>38</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/SaveImage.java</url>
           <line>32</line>
           <properties field="imageForSave" class="SaveImage" />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -451,15 +459,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="149" column="35" lean-forward="true" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
+        <state relative-caret-position="196">
+          <caret line="147" column="69" selection-start-line="147" selection-start-column="69" selection-end-line="147" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SaveImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="23">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="2" selection-end-line="20" selection-end-column="36" />
         </state>
       </provider>
     </entry>
