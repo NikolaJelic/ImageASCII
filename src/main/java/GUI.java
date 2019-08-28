@@ -16,7 +16,7 @@ import static org.hexworks.zircon.api.ComponentDecorations.shadow;
 import static org.hexworks.zircon.api.uievent.ComponentEventType.ACTIVATED;
 
 public class GUI {
-    private static final TilesetResource TILESET = CP437TilesetResources.rexPaint16x16();
+    private static final TilesetResource TILESET =CP437TilesetResources.rexPaint16x16();
     static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     static double columns = screenSize.getWidth() / TILESET.getWidth() / 1.2;
     static double rows = screenSize.getHeight() / TILESET.getHeight() / 1.2;
@@ -58,7 +58,7 @@ public class GUI {
 
 
 
-    public void GUIrender() {
+    public void GUIrender() throws Exception{
 
 
         Screen screen = Screens.createScreenFor(tileGrid);
@@ -136,6 +136,18 @@ public class GUI {
         exitButton.handleComponentEvents(ACTIVATED, event -> {
 
             System.exit(0);
+            return UIEventResponses.processed();
+
+        });
+
+        saveButton.handleComponentEvents(ACTIVATED, event -> {
+
+            SaveImage saveImage = new SaveImage(asciiConverter.red,asciiConverter.green,asciiConverter.blue,asciiConverter.chars);
+            try {
+                saveImage.paint();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             return UIEventResponses.processed();
 
         });

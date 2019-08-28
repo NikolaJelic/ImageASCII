@@ -21,16 +21,18 @@ public class FilePicker {
 
         int returnValue = jfc.showOpenDialog(null);
         String path;
-        BufferedImage img=null;
+        BufferedImage img = null;
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = jfc.getSelectedFile();
             path = selectedFile.getAbsolutePath();
             try {
                 img = ImageIO.read(new File(path));
             } catch (IOException e) {
-            }        }
+            }
+        }
         return img;
     }
+
     public static BufferedImage resize(BufferedImage img, int newW, int newH) throws IOException {
         return Thumbnails.of(img).size(newW, newH).asBufferedImage();
     }

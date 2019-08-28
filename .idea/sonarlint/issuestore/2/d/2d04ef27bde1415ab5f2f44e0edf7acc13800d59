@@ -1,12 +1,2 @@
 
-Xsquid:S1854V":Remove this useless assignment to local variable "rchars".(âşÖÑ8˜ÄÿøÂ-
-nsquid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(ÕÚ«ùÿÿÿÿ8‹¢¼ÏÄ-
-Nsquid:S1481X"+Remove this unused "rchars" local variable.(é°¾øÿÿÿÿ8°ç‘ÜÆ-
-Fsquid:S1148:"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‹—ÜÆ-
-\squid:S1854U">Remove this useless assignment to local variable "asciiCharR".(©©€ª8˜ÄÿøÂ-
-]squid:S1854X":Remove this useless assignment to local variable "rchars".(é°¾øÿÿÿÿ8°ç‘ÜÆ-
-squid:S1488v"\Immediately return this expression instead of assigning it to the temporary variable "tile".(€¼òúÿÿÿÿ8®ÏÄ-
-lsquid:HiddenFieldCheckW">Rename "asciiCharR" which hides the field declared at line 49.(âÑı¡ûÿÿÿÿ8˜ÄÿøÂ-
-asquid:S1854W">Remove this useless assignment to local variable "asciiCharR".(âÑı¡ûÿÿÿÿ8˜ÄÿøÂ-
-Rsquid:S1481W"/Remove this unused "asciiCharR" local variable.(âÑı¡ûÿÿÿÿ8˜ÄÿøÂ-
-hsquid:HiddenFieldCheckX":Rename "rchars" which hides the field declared at line 50.(é°¾øÿÿÿÿ8˜ÄÿøÂ-
+Fsquid:S1148C"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‹—ÜÆ-
