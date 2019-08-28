@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca1845c-8c7a-401f-bd07-1f91360eb120" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06d2541db29fe6630bc6f5fb7e28c6447565d94a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06d2541db29fe6630bc6f5fb7e28c6447565d94a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d04ef27bde1415ab5f2f44e0edf7acc13800d59" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d04ef27bde1415ab5f2f44e0edf7acc13800d59" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/885422c42e49516985dbcb96e2a75faa62b72fff" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/885422c42e49516985dbcb96e2a75faa62b72fff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/cee2ee534ff9a778074acc67d6cff5003bbe6391" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/cee2ee534ff9a778074acc67d6cff5003bbe6391" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9af91f059660ea65821238e6f43196fc36928a9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9af91f059660ea65821238e6f43196fc36928a9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/ef113fc4f3d6388266597955f8f2b20ecd3973ea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/ef113fc4f3d6388266597955f8f2b20ecd3973ea" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/FilePicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/FilePicker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ASCIIMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ASCIIMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FilePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FilePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ASCIIMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ASCIIMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/SaveImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/SaveImage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SaveImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SaveImage.java" afterDir="false" />
     </list>
@@ -38,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="144" selection-start-line="144" selection-end-line="144" />
+            <state relative-caret-position="426">
+              <caret line="149" column="35" lean-forward="true" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -47,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SaveImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="345">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -57,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/../graphicsTest/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="314">
-              <caret line="25" column="50" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="25" selection-end-column="50" />
+              <caret line="25" column="50" selection-start-line="24" selection-start-column="6" selection-end-line="25" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -155,9 +147,9 @@
         <option value="$PROJECT_DIR$/src/main/java/GetColors.java" />
         <option value="$PROJECT_DIR$/src/main/java/ASCIIConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/FilePicker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/ASCIIMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/SaveImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI.java" />
       </list>
     </option>
   </component>
@@ -208,7 +200,7 @@
   <component name="PropertiesComponent">
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.6577473" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567002889788" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567004559237" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -308,11 +300,19 @@
       <option name="project" value="LOCAL" />
       <updated>1566291886338</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="started working on the saving option">
+      <created>1567002946352</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567002946352</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16687042" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -323,8 +323,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987775" weight="0.32871974" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49938875" visible="true" weight="0.39907727" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4987775" visible="true" weight="0.32871974" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49938875" weight="0.39907727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -350,22 +350,23 @@
     <MESSAGE value="commited again" />
     <MESSAGE value="commit 19,8,2073, 20:15" />
     <MESSAGE value="fixed some error got new ones" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some error got new ones" />
+    <MESSAGE value="started working on the saving option" />
+    <option name="LAST_COMMIT_MESSAGE" value="started working on the saving option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GUI.java</url>
-          <line>144</line>
+          <line>146</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/SaveImage.java</url>
-          <line>27</line>
-          <properties field="saveImage" class="SaveImage" />
-          <option name="timeStamp" value="2" />
+          <line>32</line>
+          <properties field="imageForSave" class="SaveImage" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -423,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ASCIIConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="121" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ASCIIMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -440,21 +434,28 @@
     <entry file="file://$PROJECT_DIR$/../graphicsTest/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
-          <caret line="25" column="50" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="25" selection-end-column="50" />
+          <caret line="25" column="50" selection-start-line="24" selection-start-column="6" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ASCIIConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="121" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SaveImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="345">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        <state relative-caret-position="426">
+          <caret line="149" column="35" lean-forward="true" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
         </state>
       </provider>
     </entry>

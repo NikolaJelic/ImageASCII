@@ -141,8 +141,10 @@ public class GUI {
         });
 
         saveButton.handleComponentEvents(ACTIVATED, event -> {
+            int x = asciiConverter.pic.length;
+            int y = asciiConverter.pic[0].length;
 
-            SaveImage saveImage = new SaveImage(asciiConverter.red,asciiConverter.green,asciiConverter.blue,asciiConverter.chars);
+            SaveImage saveImage = new SaveImage(asciiConverter.red,asciiConverter.green,asciiConverter.blue,asciiConverter.chars,x,y);
             try {
                 saveImage.paint();
             } catch (Exception e) {

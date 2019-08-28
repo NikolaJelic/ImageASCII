@@ -17,22 +17,28 @@ public class SaveImage  {
     private int[][] green;
     private int[][] blue;
     private char[][] chars;
+    private int x,y;
 
-    public SaveImage(int[][] red, int[][] green, int[][] blue, char[][] chars) {
+    public SaveImage(int[][] red, int[][] green, int[][] blue, char[][] chars, int x, int y) {
         this.red = red;
         this.green = green;
         this.blue = blue;
         this.chars = chars;
+        this.x =x;
+        this.y =y;
     }
 
-    BufferedImage image = new BufferedImage(red.length , red[0].length , BufferedImage.TRANSLUCENT);
-    Graphics2D graphics = image.createGraphics();
 
-    Tile[][] imageForSave = new Tile[red.length][red[0].length];
+
+    Tile[][] imageForSave = new Tile[x][y];
 
     SwingTilesetLoader loader = new SwingTilesetLoader();
     final Tileset<Graphics2D> tileset = loader.loadTilesetFrom(CP437TilesetResources.rexPaint16x16());
+   // final BufferedImage image = new BufferedImage(800, 600, BufferedImage.TRANSLUCENT);
 
+      BufferedImage image = new BufferedImage(x * tileset.getHeight(), y * tileset.getWidth(), BufferedImage.TRANSLUCENT);
+
+    Graphics2D graphics = image.createGraphics();
 
     public void paint() throws Exception {
         fillArray();
