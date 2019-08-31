@@ -1,2 +1,6 @@
 
-6squid:S1700"Rename field "saveImage"(¸ãÀ¾8¹ûæ›Í-
+Bsquid:S1659"Declare "y" on a separate line.(¡Ê²‘þÿÿÿÿ8ÊŸ­¿Î-
+[
+squid:S106<"9Replace this use of System.out or System.err by a logger.(ÖÌô²þÿÿÿÿ8ÊŸ­¿Î-
+V
+squid:S106?"9Replace this use of System.out or System.err by a logger.(à„Ù¡8ÊŸ­¿Î-

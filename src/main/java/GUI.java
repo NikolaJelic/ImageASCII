@@ -57,8 +57,7 @@ public class GUI {
     }
 
 
-
-    public void GUIrender() throws Exception{
+    public void guirender() {
 
 
         Screen screen = Screens.createScreenFor(tileGrid);
@@ -76,10 +75,7 @@ public class GUI {
                 .withPosition(Positions.create(0, 2))
                 .build();
 
-        Button workButton = Components.button()
-                .withText("Apply")
-                .withPosition(Positions.create(0, 4))
-                .build();
+
         Button saveButton = Components.button()
                 .withText("Save")
                 .withPosition(Positions.create(0, optionsY - 8))
@@ -120,7 +116,7 @@ public class GUI {
 
             asciiConverter.process();
             tiles = asciiConverter.getTilesToRender();
-            for (int i = 0; i < panelX; i++) { ////-1
+            for (int i = 0; i < panelX; i++) {
                 for (int j = 0; j < panelY; j++) {
                     if (tiles[i][j] != null) {
                         panelImage.setTileAt(
@@ -144,9 +140,7 @@ public class GUI {
             int x = asciiConverter.pic.length;
             int y = asciiConverter.pic[0].length;
 
-            SaveImage saveImage = new SaveImage(asciiConverter.red,asciiConverter.green,asciiConverter.blue,asciiConverter.chars);
-            //,asciiConverter.pic.length,asciiConverter.pic[0].length
-
+            SaveImage saveImage = new SaveImage(asciiConverter.red, asciiConverter.green, asciiConverter.blue, asciiConverter.chars, x, y);
             try {
                 saveImage.paint();
             } catch (Exception e) {
@@ -158,7 +152,7 @@ public class GUI {
 
 
         panelOptions.addComponent(openButton);
-        panelOptions.addComponent(workButton);
+
         panelOptions.addComponent(saveButton);
         panelOptions.addComponent(exitButton);
         screen.addComponent(panelImage);
@@ -174,20 +168,5 @@ public class GUI {
 
     }
 
-    public void clearPanel() {
-        Tile blankTile = Tiles.newBuilder()
-                .withBackgroundColor(TileColors.fromString("#00001c"))
-                .withForegroundColor(TileColors.fromString("#00001c"))
-                .withCharacter(' ')
-                .build();
-        for (int i = 0; i < panelX; i++) {
-            for (int j = 0; j < panelY; j++) {
-                panelImage.setTileAt(
-                        Positions.create(i, j),
-                        blankTile
-                );
-            }
-        }
-    }
 
 }

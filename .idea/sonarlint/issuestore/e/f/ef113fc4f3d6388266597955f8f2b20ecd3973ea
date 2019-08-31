@@ -1,5 +1,7 @@
 
-msquid:S00100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥‰À”8óÎš÷Â-
 Hsquid:S00108r")Either remove or fill this block of code.(”ı¾8ı›ç÷Â-
 fsquid:S1192f"HDefine a constant instead of duplicating this literal "#00001c" 6 times.(ó‡´é8¦ûæ›Í-
-psquid:S3776="RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¥‰À”8¦ûæ›Í-
+©%squid:RedundantThrowsDeclarationCheck="lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(‰Ê´Áùÿÿÿÿ8À°®¿Î-
+usquid:S3776="RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(‰Ê´Áùÿÿÿÿ8À°®¿Î-
+jsquid:S00112="FDefine and throw a dedicated exception instead of using a generic one.(‰Ê´Áùÿÿÿÿ8À°®¿Î-
+Gsquid:S1148˜"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8À°®¿Î-
